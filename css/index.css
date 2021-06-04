@@ -1,0 +1,52 @@
+#pic {
+    width: 40%;
+}
+
+body {
+    border-top-width: 0;
+    text-align: center;
+    background: url(../image/wallhaven-722r3y.jpg) top center/cover no-repeat fixed, #171717 url(../image/bg-dark-grain.png) top left repeat;
+
+}
+
+body.startpage .feat-row img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: .25s;
+}
+
+body.startpage .feat-row {
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1560px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+body.startpage .feat-row .lg-thumb {
+    padding: 2px 6px;
+}
+
+img {
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+body.startpage .feat-row .sm-thumb {
+    padding: 4px 6px;
+}
+
+img:hover {
+    filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

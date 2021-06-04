@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../image/wallhaven-3z369y_2560x1440.png) no-repeat;
+    background-size: cover;
+}
+
+.box {
+    color: rgb(6, 173, 151);
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box .box-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.box h1 {
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.box h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+}
+
+.one {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+}
+
+.one:hover {
+    color: rgb(6, 173, 151);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/icon.jpg"/>
+    <title>Boundless Wallpaper</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/FileSaver.js/2.0.5/FileSaver.js"></script>
+    <script>
+        $(function () {
+            var button = document.getElementById("reg");
+            button.addEventListener("click", saveHandler, false);
+
+            function saveHandler() {
+                let data = {
+                    name: "hanmeimei",
+                    password: 88
+                }
+                var content = JSON.stringify(data);
+                var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+                saveAs(blob, "save.json");
+                self.location = 'login.html';
+            }
+
+            /* $("#reg").click(function () {
+               var obj = {};
+               var key = "name";
+               var value = "password"
+               obj[key] = '123';
+               obj[value] = '4124214'
+               console.log(obj)
+             })*/
+        })
+    </script>
+</head>
+<body>
+<div id="login">
+    <h1>Register</h1>
+    <form method="post">
+        <input type="text" required="required" placeholder="用户名" name="u" id="uname"></input>
+        <input type="password" required="required" placeholder="密码" name="p" id="upass"></input>
+        <button id="reg" class="but" type="submit">注册</button>
+    </form>
+</div>
+</body>
+</html>

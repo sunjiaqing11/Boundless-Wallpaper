@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:https="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" href="image/icon.jpg"/>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Boundless Wallpaper</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css"></link>
+    <script>
+        $(function () {
+            $("img").click(function () {
+                if (this.id != "icon") {
+                    alert('功能暂未开放');
+                }
+            })
+            $(".Notopen").click(function () {
+                alert('功能暂未开放');
+            })
+
+        })
+    </script>
+
+</head>
+<body class="startpage" data-version="1.0.3">
+<nav class="navbar navbar-inverse" style="margin-bottom: 0">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1"
+                    data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">首页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="Not open" href="#">排行榜 <span class="sr-only">(current)</span></a></li>
+                <li><a class="Notopen" href="#">热门</a></li>
+                <li class="dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                       href="#"
+                       role="button">分类 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="Notopen" href="#">风景</a></li>
+                        <li><a class="Notopen" href="#">人物</a></li>
+                        <li><a class="Notopen" href="#">动漫</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a class="Notopen" href="#">视觉</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a class="Notopen" href="#">设计</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="搜索">
+              </div>
+              <button type="submit" class="btn btn-default">搜索</button>
+            </form> -->
+            <div class="navbar-form navbar-left">
+                <div class="input-group">
+                    <input class="form-control" type="text">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">搜索</button>
+                  </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+
+            <ul class="nav navbar-right">
+                <li class="dropdown">
+                    <img id="icon" alt="" aria-expanded="false" aria-haspopup="true"
+                         class="img-responsive dropdown-toggle"
+                         data-toggle="dropdown" height="50px" id="Avatar" role="button" src="image/sun.jpg"
+                         width="50px"/>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">登录</a></li>
+                        <li><a href="personal.html">个人中心</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="top-nav">
+    <div id="pic" style="width: 100%">
+        <div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+                <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img alt="..." src="image/wallhaven-e778wr_5000x800.png">
+                </div>
+                <div class="item">
+                    <img alt="..." src="image/wallhaven-y88gg7_5000x800.png">
+                </div>
+                <div class="item">
+                    <img alt="..." src="image/wallhaven-q22g6r_5000x800.png">
+                </div>
+
+            </div>
+            <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button">
+                <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button">
+                <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <ul class="startpage-menu">
+        <h1 class="center-block" style="color: #FFFFFF;">Boundless Wallpaper <small>A W T</small></h1>
+    </ul>
+
+</div>
+
+<div class="featured">
+    <div class="feat-row">
+         <span class="lg-thumb">
+             <img src="image/pkkm6p.jpg" width="432px">
+         </span>
+        <span class="lg-thumb">
+             <img src="image/wallhaven-j336rq.jpg" width="432px">
+         </span>
+        <span class="lg-thumb">
+             <img src="image/rddgwm.jpg" width="432px">
+         </span>
+        <span class="lg-thumb">
+             <img src="image/j3339m.jpg" width="432px">
+         </span>
+    </div>
+    <div class="more-feat">
+        <div class="feat-row">
+             <span class="sm-thumb">
+                  <img src="image/3zz11d.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                  <img src="image/k77j11.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                  <img src="image/m99my9.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                  <img src="image/288q66.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                  <img src="image/3zz8d9.jpg" width="300px">
+             </span>
+        </div>
+        <div class="feat-row">
+             <span class="sm-thumb">
+                 <img src="image/z88r3o.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/wqqx37.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/ox6zrl.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/4dlmdo.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/o33ej9.jpg" width="300px">
+             </span>
+        </div>
+        <div class="feat-row">
+             <span class="sm-thumb">
+                 <img src="image/0qqg97.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/8oo9qy.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/o3382p.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/rddwyj.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/j33ymy.jpg" width="300px">
+             </span>
+            <span class="sm-thumb">
+                 <img src="image/8ooqvk.jpg" width="300px">
+             </span>
+        </div>
+
+    </div>
+</div>
+<div class="jumbotron">
+    <h1>Boundless Wallpaper</h1>
+    <p class="copyright"><span><a href="https://github.com/sunjiaqing11"> All images remain property of their original owners. &nbsp;</a></span><span
+            style="margin-right:1em"> Site &amp; code © <a
+            href="https://github.com/sunjiaqing11"> Github </a> 2021</span><a
+            href="https://github.com/sunjiaqing11">Privacy Policy</a> · <a href="https://github.com/sunjiaqing11">Terms
+        of Service</a></p>
+</div>
+
+</body>
+</html>

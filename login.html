@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/icon.jpg"/>
+    <title>Boundless Wallpaper</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#log").click(function () {
+                $.getJSON("ajax.json", function (data) {
+                    $.each(data, function (Index, content) {
+                        if ($("#uname").val() == content["name"] && $("#upass").val() == content["password"]) {
+                            self.location = 'Boundless Wallpaper.html';
+                        }
+                    });
+                });
+            })
+            $("#reg").click(function () {
+                self.location = 'register.html';
+            })
+
+        })
+    </script>
+</head>
+<body>
+<div id="login">
+    <h1>Login</h1>
+    <form method="post">
+        <input type="text" required="required" placeholder="用户名" name="u" id="uname"></input>
+        <input type="password" required="required" placeholder="密码" name="p" id="upass"></input>
+        <button id="log" class="but" type="submit">登录</button>
+    </form>
+    <button id="reg" class="but">注册</button>
+</div>
+</body>
+</html>
